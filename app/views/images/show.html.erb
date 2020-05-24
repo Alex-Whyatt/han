@@ -15,5 +15,10 @@
   <%= @image.album_id %>
 </p>
 
+<p>
+  <strong>Drawing:</strong>
+  <%= image_tag(@image.drawing) %>
+</p>
+
 <%= link_to 'Edit', edit_image_path(@image) %> |
 <%= link_to 'Back', images_path %>

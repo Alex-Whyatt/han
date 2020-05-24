@@ -1,15 +1,21 @@
 <div class="container" style="padding-top: 200px;height:100%;padding-left: 50px;">
+  <h1>New Image</h1>
   <p> 
+
     <strong>Title</strong>
     <%= @images.title %>
   </p>
 
-  <% (0... @album.images.count).each do |image| %>
-    <%= image_tag(@album.images[image]) %>
+  <% (@album.images).each do |snails| %>
+    <%= image_tag(snails.drawing_f) %>
+
+    <p>
+    <strong>Body:</strong>
+    <%=  %>
+  </p>
   <% end %>
 
-  <p>
-    <strong>Body:</strong>
-    <%= @images.body %>
-  </p>
+  
+
+  <%= link_to "Upload new drawing", new_image_path(:album_id => @album.id) %>
 </div>
