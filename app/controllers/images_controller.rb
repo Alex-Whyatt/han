@@ -1,11 +1,11 @@
 class ImagesController < ApplicationController
   before_action :set_image, only: [:show, :edit, :update, :destroy]
-
+  before_action :find_album, only: [:update, :destroy]
   # GET /images
   # GET /images.json
   def index
-    redirect_to :controller => 'albums', :action => 'show', :id => params[:album_id] if params[:album_id]
-    @images = Image.all
+    @album = Album.find(params[:id]) 
+    @images = Image.find(params[:id])
   end
 
   # GET /images/1
@@ -66,6 +66,15 @@ class ImagesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    def find_album
+      @album = Album.find(params[:album_id])
+    end
+
+    def find_image
+      @image = @album.images.find(params[:id])
+    end
+
+
     def set_image
       @image = Image.find(params[:id])
     end

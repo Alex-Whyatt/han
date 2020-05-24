@@ -1,5 +1,4 @@
 class Album < ApplicationRecord
-	has_many :albumisations, :dependent => :destroy
-	has_many :images, :through => :albumisations
+	has_many :images, :dependent => :destroy
 	has_one_attached :thumbnail
 end

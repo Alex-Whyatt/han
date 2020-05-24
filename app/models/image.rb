@@ -1,6 +1,5 @@
 class Image < ApplicationRecord
-  has_many :albumisations, :dependent => :destroy
-  has_many :albums, :through => :albumisations
+  belongs_to :album
   has_one_attached :drawing
   has_rich_text :body
 
