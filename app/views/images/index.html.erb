@@ -1,14 +1,15 @@
-<p> 
-  <strong>Title</strong>
-  <%= @images.title %>
-</p>
+<div class="container" style="padding-top: 200px;height:100%;padding-left: 50px;">
+  <p> 
+    <strong>Title</strong>
+    <%= @images.title %>
+  </p>
 
-<% (0... @album.images.count).each do |image| %>
-  <%= image_tag(@album.images[image]) %>
-<% end %>
+  <% (0... @album.images.count).each do |image| %>
+    <%= image_tag(@album.images[image]) %>
+  <% end %>
 
-<p>
-  <strong>Body:</strong>
-  <%= @images.body %>
-</p>
-
+  <p>
+    <strong>Body:</strong>
+    <%= @images.body %>
+  </p>
+</div>

@@ -1,28 +1,30 @@
 <p id="notice"><%= notice %></p>
+<div class="container" style="padding-top: 200px;height:100%;padding-left: 50px;width:60%">
+  <h1>Albums</h1>
 
-<h1>Albums</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @albums.each do |album| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= album.title %></td>
-        
-        <td><%= link_to 'Show', images_url(:id => album.id) %></td>
-        <td><%= link_to 'Edit', edit_album_path(album) %></td>
-        <td><%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Title</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
+    <tbody>
+      <% @albums.each do |album| %>
+        <tr>
+          <td><%= album.title %></td>
+          <%= image_tag(album.thumbnail_f) %>
+          <td><%= link_to 'Show', images_url(:id => album.id) %></td>
+          <td><%= link_to 'Edit', edit_album_path(album) %></td>
+          <td><%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+  <%= link_to 'New Album', new_album_path %>
+</div>
 <br>
 
-<%= link_to 'New Album', new_album_path %>
+
