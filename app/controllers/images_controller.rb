@@ -5,7 +5,7 @@ class ImagesController < ApplicationController
   # GET /images.json
   def index
     @album = Album.find(params[:id]) 
-    @images = Image.find(params[:id])
+    @images = Image.find(params[:id]) if params[:album_id]
   end
 
   # GET /images/1

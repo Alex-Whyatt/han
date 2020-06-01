@@ -1,28 +1,16 @@
 <p id="notice"><%= notice %></p>
-<div class="container" style="padding-top: 200px;height:100%;padding-left: 50px;width:60%">
-  <h1>Albums</h1>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @albums.each do |album| %>
-        <tr>
-          <td><%= album.title %></td>
+<div class="container" style="padding-top: 200px;height:100%;padding-left: 150px;">
+    <% @albums.each do |album| %>
+        <div class="container" style="width:auto;float:left">
+          <div class="card">
           <%= image_tag(album.thumbnail_f) %>
-          <td><%= link_to 'Show', images_url(:id => album.id) %></td>
-          <td><%= link_to 'Edit', edit_album_path(album) %></td>
-          <td><%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-  <br>
+          <%= link_to album.title, images_url(:id => album.id), class: "btn btn-dark" %><span class="badge badge-light"><%= album.images.count %></span>
+          <%= link_to 'delete', album, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+        </div>
+    <% end %>
+</div>
+<br>
   <%= link_to 'New Album', new_album_path %>
 </div>
 <br>
