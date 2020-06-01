@@ -1,19 +1,12 @@
 <div class="container" style="padding-top: 200px;height:100%;padding-left: 50px;">
-  <h1>New Image</h1>
-  <p> 
-
-    <strong>Title</strong>
-    <%= @images.title %>
-  </p>
 
   <% (@album.images).each do |snails| %>
     <%= image_tag(snails.drawing_f) %>
-
-    <p>
-    <strong>Body:</strong>
-    <%=  %>
-  </p>
+    <%= snails.title %>
+    <%= snails.body %>
   <% end %>
+
+
 
   
 
