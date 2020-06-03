@@ -1,17 +1,16 @@
 <div class="container" style="padding-top: 200px;height:100%;padding-left: 50px;">
 
   <% (@album.images).each do |snails| %>
-  <div class="container" style="width:auto;float:left">
-    <div class="card">
+    <div class="container" style="width:auto;float:left;padding-top: 75px">
+      <div class="card">
       <% if snails.drawing.attached? %>
         <%= image_tag(snails.drawing_f) %>
       <% end %>
-      <%= snails.title %>
+      <%= link_to snails.title, snails %>
       <%= snails.body %>
-    <% end %>
-    </div>
-  </div>
-
+      </div>
+     </div>
+  <% end %>
 
   
 

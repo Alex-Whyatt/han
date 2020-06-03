@@ -4,7 +4,10 @@ class Image < ApplicationRecord
   has_rich_text :body
 
 	def drawing_f
-  		return self.drawing.variant(resize: "250x
-  			200!").processed
+  		return self.drawing.variant(resize: "250x200!").processed
+ 	end
+
+ 	def drawing_big
+  		return self.drawing.variant(resize: "400x400!").processed
  	end
 end

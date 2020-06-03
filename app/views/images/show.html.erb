@@ -1,24 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="container" style="padding-top: 200px;height:100%;padding-left: 50px;">
 
-<p>
-  <strong>Title:</strong>
-  <%= @image.title %>
-</p>
+	<div class="jumbotron">
+		<%= link_to 'Back', images_path(:id => @image.album_id) %>
+      <div class="card" style="max-width: 20%;">
+      	<%= image_tag(@image.drawing_f) %>
+      </div>
+	  <p class="lead"><%= @image.title %></p>
+	  <hr class="my-4">
+	  <p><%= @image.body %></p>
+	  <p class="lead">
+	    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+	  </p>
+	</div>
 
-<p>
-  <strong>Views:</strong>
-  <%= @image.views %>
-</p>
+	  
+	
 
-<p>
-  <strong>Album:</strong>
-  <%= @image.album_id %>
-</p>
-
-<p>
-  <strong>Drawing:</strong>
-  <%= image_tag(@image.drawing_f) %>
-</p>
-
-<%= link_to 'Edit', edit_image_path(@image) %> |
-<%= link_to 'Back', images_path %>
+</div>
