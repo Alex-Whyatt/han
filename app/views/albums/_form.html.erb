@@ -1,33 +1,50 @@
-<div class="container" style="padding-top: 200px;height:100%;padding-left: 150px;width:50%">
-<h1>New Album</h1>
-  <%= form_with(model: album, local: true) do |form| %>
-    <% if album.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(album.errors.count, "error") %> prohibited this album from being saved:</h2>
+<div class="container" style="padding-top: 200px;height:100%;padding-left: 25px;width:50%">
+  <div class="card" style="float:left;background-color:#f1f8ff;padding:50px">
+    <div class="container" style="padding-left: 25px;%">
+        <%= form_with(model: album, local: true) do |form| %>
+          <% if album.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(album.errors.count, "error") %> prohibited this album from being saved:</h2>
 
-        <ul>
-          <% album.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
+              <ul>
+                <% album.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
           <% end %>
-        </ul>
+
+          <div class="field">
+            <div class="form-row align-items-center">
+              <div class="col-auto">
+                <%= form.label :title, class: "form-check-label"%>
+              </div>
+              <div class="col-auto">
+                <%= form.text_field :title %>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="field" style="padding-top: 25px;padding-bottom: 25px">
+            <div class="form-row align-items-center">
+              <div class="col-auto">
+                <%= form.label :thumbnail, class: "form-check-label" %>
+              </div>
+              <div class="col-auto">
+                <%= form.file_field :thumbnail %>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="actions">
+            <%= form.submit %>
+            <br>
+          </div>
+        <% end %>
+      <br>
+      <%= link_to 'Back', albums_path %>
+        
       </div>
-    <% end %>
-
-    <div class="field">
-      <%= form.label :title %>
-      <%= form.text_field :title %>
-    </div>
-    <br>
-    <div class="field" style="padding-top: 25px;padding-bottom: 25px">
-      <%= form.label :thumbnail, class:'form-control' %>
-      <%= form.file_field :thumbnail %>
-    </div>
-    <br>
-    <div class="actions">
-      <%= form.submit %>
-    </div>
-  <% end %>
-  
-<%= link_to 'Back', albums_path %>
-
+  </div>
 </div>

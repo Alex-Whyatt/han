@@ -15,8 +15,14 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+//= require jquery3
+//= require jquery_ujs
+//= require_tree
+//= require activestorage
 import "bootstrap";
 import "./src/application.scss";
 
 require("trix")
 require("@rails/actiontext")
+
+
