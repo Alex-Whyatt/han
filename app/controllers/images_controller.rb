@@ -12,6 +12,7 @@ class ImagesController < ApplicationController
   # GET /images/1.json
   def show
     @album = Album.find(params[:album_id]) if params[:album_id]
+    @next_image = @image.next_1
   end
 
   # GET /images/new

@@ -15,7 +15,18 @@ class Image < ApplicationRecord
  		self.id + 1
  	end
 
+ 	def take_one
+ 		self.id - 1
+ 	end
+
  	def next_1
- 		Image.offset(self.id).limit(1).order("id ASC").first
+ 		self.add_one unless !album.images.where("id > ?", self.id).exists?
+  	end
+
+  	def prev_1
+ 		self.take_one unless !album.images.where("id < ?", self.id).exists?
   	end
 end
+
+
+##Image.offset(self.id).limit(1).order("id ASC").first
