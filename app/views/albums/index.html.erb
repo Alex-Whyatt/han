@@ -1,17 +1,15 @@
 <p id="notice"><%= notice %></p>
-  <div class="container" style="padding-top:200px;float:left;">
-    <% @albums.each do |album| %>
-        
-          <div class="card" style="border-color: white;width:175px;float:left">
+  <div class="container" style="padding-top:250px;float:left;">
+    <% @albums.each do |album| %>    
+          <div class="card" style="border-color: white;width:auto;float:left;padding-left: 25px">
             <%= link_to image_tag(album.thumbnail_f), images_url(:id => album.id) %>
-          <a class="nav-link" style="color: black;font-family: sans-serif;background-color: #f1f8ff;font-size: 12px;text-align: center;"href="<%= images_url(:id => album.id) %>"><%= album.title %> | <span class="badge badge-dark"><%= album.images.count %></span></a>
+            <a class="nav-link" style="color: black;font-family: sans-serif;font-size: 12px;text-align: center;"href="<%= images_url(:id => album.id) %>"><%= album.title %> | <span class="badge badge-dark"><%= album.images.count %></span></a>
           </div>
-        
     <% end %>
     <br>
     
   </div>
-  <div class="container" style="padding-left: 75px;padding-top: 500px">
+  <div class="container" style="padding-left: 100px;padding-top: 500px">
     <%= link_to 'New Album', new_album_path, class: 'btn btn-dark btn-sml' %>
   </div>
 </div>

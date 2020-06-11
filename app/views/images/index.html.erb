@@ -1,7 +1,7 @@
-<div class="container" style="padding-top: 200px;height:100%;padding-left: 50px;">
 
+<div class="container" style="padding-top: 200px;height:100%;padding-left: 75px;">
   <% (@album.images).each do |snails| %>
-    <div class="container" style="width:400px;float:left;padding-top: 75px">
+    <div class="container" style="width:200px;float:left;padding-top: 75px">
       <div class="card"style="border-color: white">
       <% if snails.drawing.attached? %>
         <%= image_tag(snails.drawing_f) %>
@@ -10,10 +10,10 @@
       </div>
      </div>
   <% end %>
+</div>
 
-  
-
-  <%= link_to "Upload new drawing", new_image_path(:album_id => @album.id) %>
+<div class="container" style="padding-top:75px;padding-left: 160px;float:left">
+  <%= link_to "Upload new drawing", new_image_path(:album_id => @album.id), class: "btn btn-dark" %>
 </div>
 
 
