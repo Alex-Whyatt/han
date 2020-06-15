@@ -21,8 +21,14 @@ require("channels")
 //= require activestorage
 import "bootstrap";
 import "./src/application.scss";
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel';
+
+global.$ = jQuery;
+
+import JQuery from 'jquery';
+window.$ = window.JQuery = JQuery;
 
 require("trix")
 require("@rails/actiontext")
-
 

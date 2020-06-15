@@ -11,6 +11,10 @@ class Image < ApplicationRecord
   		return self.drawing.variant(resize: "400x400!").processed
  	end
 
+ 	def drawing_c
+  		return self.drawing.variant(resize: "150x150!").processed
+ 	end
+
  	def add_one
  		self.id + 1
  	end
@@ -26,7 +30,19 @@ class Image < ApplicationRecord
   	def prev_1
  		self.take_one unless !album.images.where("id < ?", self.id).exists?
   	end
+
+  	def has_next?
+  		album.images.where("id > ?", self.id).exists?
+  	end
+
+  	def has_prev?
+  		album.images.where("id < ?", self.id).exists?
+  	end
+
 end
 
 
+
+
 ##Image.offset(self.id).limit(1).order("id ASC").first
+##self.add_one unless !album.images.where("id > ?", self.id).exists?
