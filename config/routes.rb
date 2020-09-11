@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   end
   resources :albums, :has_many => :images
   get 'info/index'
-  get '/album/:album_id/images', to: 'images#show', as: 'imgshow'
+  get '/album/:album_id/', to: 'albums#index'
+  get '/album/:album_id/image', to: 'images#index'
+  get '/album/:album_id/image/:image_id', to: 'images#show'
   root 'albums#index'
 end

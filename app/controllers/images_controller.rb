@@ -12,13 +12,14 @@ class ImagesController < ApplicationController
   # GET /images/1.json
   def show
     @album = Album.find(params[:album_id]) if params[:album_id]
+    @image = Image.find(params[:id])
     @next_image = @image.next_1
   end
 
   # GET /images/new
   def new
     @image = Image.new
-    @album = Album.all
+    @album = Album.find(params[:album_id])
   end
 
   # GET /images/1/edit
@@ -75,13 +76,12 @@ class ImagesController < ApplicationController
       @image = @album.images.find(params[:id])
     end
 
-
     def set_image
       @image = Image.find(params[:id])
     end
-
-    # Only allow a list of trusted parameters through.
+    
     def image_params
       params.require(:image).permit(:title, :views, :body, :drawing, :album_id)
     end
+    # Only allow a list of trusted parameters through.
 end

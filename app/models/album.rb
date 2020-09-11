@@ -4,5 +4,10 @@ class Album < ApplicationRecord
 
 	def thumbnail_f
   		return self.thumbnail.variant(resize: "175x175!").processed
- 	end
+	end
+	 
+	def thumbnail_b
+		return self.thumbnail.variant(resize: "300x300!").processed
+  	end
+	
 end

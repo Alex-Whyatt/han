@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-  <div class="container" style="padding-top:250px;float:left;">
+  <div class="container" style="padding-top:250px;padding-left:50px;float:left;">
     <% @albums.each do |album| %>    
           <div class="card" style="border-color: white;width:auto;float:left;padding-left: 25px">
             <%= link_to image_tag(album.thumbnail_f), images_url(:id => album.id) %>
@@ -9,7 +9,7 @@
     <br>
     
   </div>
-  <div class="container" style="padding-left: 100px;padding-top: 500px">
+  <div class="container" style="float:left;padding-left: 200px;padding-top: 50px">
     <%= link_to 'New Album', new_album_path, class: 'btn btn-dark btn-sml' %>
   </div>
 </div>

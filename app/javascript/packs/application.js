@@ -7,6 +7,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("packs/lightbox.js")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -22,6 +23,8 @@ require("channels")
 import "bootstrap";
 import "./src/application.scss";
 import 'owl.carousel/dist/assets/owl.carousel.css';
+import "assets/stylesheets/lightbox.css"
+import './lightbox2/lightbox.js'
 import 'owl.carousel';
 
 global.$ = jQuery;
