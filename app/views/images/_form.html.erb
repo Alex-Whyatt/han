@@ -1,5 +1,5 @@
 <div class="container" style="padding-top: 200px;height:100%;padding-left: 25px;width:50%">
-  <div class="card" style="float:left;background-color:#f1f8ff;">
+  <div class="card" style="float:left;background-color:#f1f8ff">
     <div class="container" style="padding-left: 25px;padding-top: 25px">
       <%= form_with(model: image, local: true) do |form| %>
         <% if image.errors.any? %>
@@ -20,9 +20,9 @@
         </div>
         <br>
 
-        <div class="field" style="height:175px">
+        <div class="field" class="height:175px">
           <%= form.label :body, "Describe the masterpiece:" %>
-          <%= form.rich_text_area :body, class: "form-control" %>
+          <%= form.rich_text_area :body %>
         </div>
 
         <div class="field">
@@ -30,16 +30,13 @@
           <%= form.file_field :drawing, multiple: false, direct_upload: true %>
         </div>
         <br>
-        <div class="form-control">
+        <div class="form-control; height:auto">
           <%= form.label :album_id, "Select your Album" %>
-          <p>
-            <%= form.collection_radio_buttons(:album_id, @album, :id, :title, class: "") do |b|
-              b.label(:"data-value" => b.value, class: "form-control") { b.radio_button + b.text }
-              end 
-            %>
-        </div>
-
-        <div class="actions" style="padding-left: 550px;padding-top: 250px">
+          <%= form.collection_radio_buttons(:album_id, @album, :id, :title) do |b| b.label(:"data-value" => b.value, class: "form-control") { b.radio_button + b.text }
+          end
+          %>
+        
+        <div class="actions" style="padding-left: 550px">
           <br>
           <%= form.submit "Upload" %>
         </div>
@@ -52,5 +49,6 @@
   </div>
 </div>
 <div class="container" style="float:left">
-  <%= link_to 'Back', images_path %>
+  <%= link_to 'Back', root_path %>
 </div>
+

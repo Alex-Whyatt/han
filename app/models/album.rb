@@ -10,4 +10,7 @@ class Album < ApplicationRecord
 		return self.thumbnail.variant(resize: "300x300!").processed
   	end
 	
+	def album_first
+		return album.first
+	end
 end

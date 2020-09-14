@@ -8,11 +8,11 @@ class Image < ApplicationRecord
  	end
 
  	def drawing_big
-  		return self.drawing.variant(resize: "600x600!").processed
+  		return self.drawing.variant(resize: "400x400!").processed
  	end
 
  	def drawing_c
-  		return self.drawing.variant(resize: "150x150!").processed
+  		return self.drawing.variant(resize: "175x175!").processed
 	 end
 	 
 
