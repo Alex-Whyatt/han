@@ -1,15 +1,21 @@
 <div class="navbar" style="width:10%;height:100%;float:left;"> 
-  <h2 style="color:grey"> Website_Name </h2>
+  <h2 style="color:grey;font-family:icofonts;"> Website_Name </h2>
+
+  <%= link_to "Sign up", new_user_registration_path %>
+  <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+
+
+
   <ul class="nav flex-column" style="padding-top: 200px">
 
     <li class="nav-item">
-      <a class="nav-link active" style="color: black;font-family: sans-serif;"href="<%= info_index_path %>">info</a>
+      <a class="nav-link active" style="color: black;font-family:GT Walsheim;"href="<%= info_index_path %>">info</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" style="color: black;font-family: sans-serif;"href="<%= albums_path %>">images</a>
+      <a class="nav-link" style="color: black;font-family:GT Walsheim;"href="<%= albums_path %>">images</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" style="color: black;font-family: sans-serif;"href="">forests</a>
+      <a class="nav-link" style="color: black;font-family:GT Walsheim;"href="">forests</a>
     </li>
   </ul>
 </div>

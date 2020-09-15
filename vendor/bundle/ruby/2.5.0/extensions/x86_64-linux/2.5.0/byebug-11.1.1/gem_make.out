@@ -1,0 +1,19 @@
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.1/ext/byebug
+/usr/share/rvm/rubies/ruby-2.5.1/bin/ruby -I /usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200914-8154-1r6dalk.rb extconf.rb
+creating Makefile
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 byebug.so ./.gem.20200914-8154-mw8n4w/byebug

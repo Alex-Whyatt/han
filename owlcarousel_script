@@ -1,0 +1,26 @@
+<div class="container" style="float:left; width:75%;height:100%;padding-top: 200px;padding-left: 250px">
+    <div class="owl-carousel" style="">
+         <% @album.images.each do |i| %>
+          <div> 
+            <%= link_to image_tag(i.drawing_c), i %>
+             <a class="nav-link" style="color: black;font-family: sans-serif;font-size: 12px;text-align: center;"href="<%= i %>"><%= i.title %>
+            </a>
+          </div>
+        <% end %>
+    </div>
+    <%= content_for(:after_js) do %>
+      <script>
+        $(document).ready(function(){
+          $('.owl-carousel').owlCarousel({loop:true,
+            margin:10, nav:true,
+            responsive:{
+              0:{
+                items:5
+              }
+
+            }});
+        });
+      </script>
+    <% end %>
+  </div>
+
