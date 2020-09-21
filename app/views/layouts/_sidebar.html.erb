@@ -15,8 +15,8 @@
   </ul>
 </div>
 
-  <div class="container" style="width:90%;text-align:right">
+  <div class="container" style="min-width:100%;text-align:right">
      <% if user_signed_in? %>
-      <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-outline-dark btn-sm" %>        
     <% end %>
   </div>

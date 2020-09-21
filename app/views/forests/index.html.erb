@@ -50,6 +50,7 @@
   </table>
 
   <br>
-
-  <%= link_to 'Add file...', new_forest_path %>
+  <% if current_user && current_user.admin? %>
+    <%= link_to 'Add file...', new_forest_path %>
+  <% end %>
 </div>
