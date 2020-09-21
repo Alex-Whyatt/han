@@ -21,17 +21,22 @@
         </div>
         <br>
         <div class="field">
-          <%= form.label :body %>
+          <%= form.label :body, "Description" %>
           <%= form.text_field :body, class:"form-control" %>
         </div>
+
         <div class="field">
           <%= form.label :drawing, "Select your image" %>
-          <%= form.file_field :drawing, multiple: false, direct_upload: true %>
+          <%= form.file_field :drawing, multiple: false, direct_upload: true, class: "form-control" %>
         </div>
+
         <br>
+
+
+      
         <div class="form-control; height:auto">
           <%= form.label :album_id, "Select your Album" %>
-          <%= form.collection_radio_buttons(:album_id, @album, :id, :title) do |b| b.label(:"data-value" => b.value, class: "form-control") { b.radio_button + b.text }
+            <%= form.collection_radio_buttons(:album_id, @album, :id, :title) do |b| b.label(:"data-value" => b.value, class: " form-control btn btn-outline-info btn-sm") { b.radio_button + " " + b.text }
           end
           %>
         <div class="actions" style="padding-left: 550px">

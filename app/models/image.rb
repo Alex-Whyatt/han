@@ -1,4 +1,6 @@
 class Image < ApplicationRecord
+  validates :title, presence: true
+  validates :drawing, presence: true
   belongs_to :album
   has_rich_text :body
   has_one_attached :drawing

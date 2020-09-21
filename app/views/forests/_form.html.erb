@@ -1,21 +1,30 @@
+<div class="container" style="padding-top: 200px;height:100%;padding-left: 25px;width:50%">
+  <div class="card" style="float:left;border-color:black;padding:75px">
+  <%= simple_form_for(@forest) do |f| %>
+    <%= f.error_notification %>
+    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-<%= simple_form_for(@forest) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+    <div class="field">
+      <%= f.label :file %>
+      <%= f.file_field :file, direct_upload: true,
+      accept: 'application/pdf,
+      application/zip/application/vnd.openxmlformats-officedocument.wordprocessingml.document',  class: "form-control" %>
+    </div>
 
-  <div class="form-inputs">
-    <%= f.input :description %>
+
+    <div class="form-inputs">
+      <%= f.label :description, "Name" %>
+      <%= f.text_field :description, class: "form-control" %>
+    </div>
+
+    <br>
+    <div class="form-actions">
+      <%= f.button :submit, class: "btn btn-primary" %>
+    </div>
+    <br>
+    <%= link_to 'Back', forests_path %>
+
+  <% end %>
   </div>
-
-  <div class="field">
-    <%= f.label :file %>
-    <%= f.file_field :file, direct_upload: true,
-    accept: 'application/pdf,
-    application/zip/application/vnd.openxmlformats-officedocument.wordprocessingml.document' %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+</div>
 

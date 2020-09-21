@@ -1,15 +1,20 @@
-<p id="notice"><%= notice %></p>
-<div class="container" style="padding-top:250px;padding-left:50px;float:left;">
- <div class="card" style="width:300px">
+<div class="container" style="padding-top:200px;padding-left:250px;float:left;">
+ <div class="card" style="width:400px;height:auto;padding:50px">
   <p>
-    <strong>Title:</strong>
-    <%= @album.title %>
+    
+   <h2 style="font-family:GT Walsheim;font-size:28;text-align: center"> <%= @album.title %> </h2>
   </p>
-  <%= image_tag(@album.thumbnail_b, style:'width:auto;height:auto') %>
-    <div class="container" style="width:atuo">
-      <%= link_to 'New Image Upload', new_image_path %>
-      <%= link_to 'Edit', edit_album_path(@album) %> |
-      <%= link_to 'Back', albums_path %>
+  <%= image_tag(@album.thumbnail_b) %>
+    <div class="container" style="width:auto">
+      <br>
+      <div class ="container" style="padding-top: 10px">
+        <%= link_to 'Add Images to Album...', new_image_path, class: "btn btn-outline-primary btn-sm" %> 
+      </div>
+      <br>
+      <div class ="container" style="padding-top: 10px">
+        <%= link_to 'Change Album', edit_album_path(@album), class: "btn btn-outline-primary btn-sm" %> 
+        <%= link_to 'Back', albums_path, class: "btn btn-outline-primary btn-sm" %>
+      </div>
     <div>
   </div>
 </div>

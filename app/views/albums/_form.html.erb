@@ -1,5 +1,5 @@
 <div class="container" style="padding-top: 200px;height:100%;padding-left: 25px;width:50%">
-  <div class="card" style="float:left;background-color:#f1f8ff;padding:50px">
+  <div class="card" style="float:left;border-color:black;padding:75px">
     <div class="container" style="padding-left: 25px;%">
         <%= form_with(model: album, local: true) do |form| %>
           <% if album.errors.any? %>
@@ -38,7 +38,7 @@
           </div>
           <br>
           <div class="actions">
-            <%= form.submit %>
+            <%= form.button :Create, class: "btn btn-primary" %>
             <br>
           </div>
         <% end %>
