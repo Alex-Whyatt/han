@@ -1,0 +1,354 @@
+checking for --enable-debug-build option... -------------------- no
+
+--------------------
+
+try_compiler_option: checking for -Wall option to compiler... -------------------- yes
+
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.5.1/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.5.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC  -Wall -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Waggregate-return option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall  -Waggregate-return -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wcast-align option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return  -Wcast-align -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wextra option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align  -Wextra -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wformat=2 option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra  -Wformat=2 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Winit-self option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2  -Winit-self -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wlarger-than-65500 option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self  -Wlarger-than-65500 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wmissing-declarations option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500  -Wmissing-declarations -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wmissing-format-attribute option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations  -Wmissing-format-attribute -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wmissing-include-dirs option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute  -Wmissing-include-dirs -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wmissing-noreturn option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs  -Wmissing-noreturn -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wmissing-prototypes option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn  -Wmissing-prototypes -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wnested-externs option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wmissing-prototypes  -Wnested-externs -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wold-style-definition option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs  -Wold-style-definition -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wpacked option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wold-style-definition  -Wpacked -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wp,-D_FORTIFY_SOURCE=2 option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wpacked  -Wp,-D_FORTIFY_SOURCE=2 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wpointer-arith option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wpacked -Wp,-D_FORTIFY_SOURCE=2  -Wpointer-arith -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wundef option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wpacked -Wp,-D_FORTIFY_SOURCE=2 -Wpointer-arith  -Wundef -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wout-of-line-declaration option to compiler... -------------------- no
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wpacked -Wp,-D_FORTIFY_SOURCE=2 -Wpointer-arith -Wundef  -Wout-of-line-declaration -Werror -c conftest.c"
+gcc: error: unrecognized command line option ‘-Wout-of-line-declaration’; did you mean ‘-Wold-style-declaration’?
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wunsafe-loop-optimizations option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wpacked -Wp,-D_FORTIFY_SOURCE=2 -Wpointer-arith -Wundef  -Wunsafe-loop-optimizations -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+try_compiler_option: checking for -Wwrite-strings option to compiler... -------------------- yes
+
+"gcc -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wpacked -Wp,-D_FORTIFY_SOURCE=2 -Wpointer-arith -Wundef -Wunsafe-loop-optimizations  -Wwrite-strings -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+setup_homebrew: checking for Homebrew... -------------------- no
+
+--------------------
+
+have_package: checking for gobject-introspection-1.0... -------------------- no
+
+--------------------
+
+"/usr/bin/sudo -p \[sudo\]\ password\ for\ \%u\ to\ install\ \<libgirepository1.0-dev\>:\  apt install -V -y libgirepository1.0-dev"
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+   gir1.2-geocodeglib-1.0 (3.25.4.1-4ubuntu0.18.04.1)
+   gir1.2-gst-plugins-base-1.0 (1.14.5-0ubuntu1~18.04.1)
+   gir1.2-gstreamer-1.0 (1.14.5-0ubuntu1~18.04.1)
+   gir1.2-gudev-1.0 (1:232-2)
+   gir1.2-udisks-2.0 (2.7.6-3ubuntu0.2)
+   grilo-plugins-0.3-base (0.3.5-1ubuntu1)
+   libcdr-0.1-1 (0.1.4-1build1)
+   libcmis-0.5-5v5 (0.5.1+git20160603-3build2)
+   libdazzle-1.0-0 (3.28.1-1)
+   libe-book-0.1-1 (0.1.3-1)
+   libedataserverui-1.2-2 (3.28.5-0ubuntu0.18.04.3)
+   libegl1-mesa (20.0.8-0ubuntu1~18.04.1)
+   libeot0 (0.01-5)
+   libepubgen-0.1-1 (0.1.0-2ubuntu1)
+   libetonyek-0.1-1 (0.1.7-3)
+   libevent-2.1-6 (2.1.8-stable-4build1)
+   libexiv2-14 (0.25-3.1ubuntu0.18.04.5)
+   libfreerdp-client2-2 (2.2.0+dfsg1-0ubuntu0.18.04.1)
+   libfreerdp2-2 (2.2.0+dfsg1-0ubuntu0.18.04.1)
+   libfwup1 (12-3bionic2)
+   libgc1c2 (1:7.4.2-8ubuntu1)
+   libgexiv2-2 (0.10.8-1)
+   libgom-1.0-0 (0.3.3-4)
+   libgpod-common (0.8.3-11)
+   libgpod4 (0.8.3-11)
+   liblirc-client0 (0.10.0-2)
+   libllvm8 (1:8-3~ubuntu18.04.2)
+   libllvm8:i386 (1:8-3~ubuntu18.04.2)
+   liblua5.3-0 (5.3.3-1ubuntu0.18.04.1)
+   libmediaart-2.0-0 (1.9.4-1)
+   libmspub-0.1-1 (0.1.4-1)
+   libodfgen-0.1-1 (0.1.6-2)
+   libqqwing2v5 (1.3.4-1.1)
+   libraw16 (0.18.8-1ubuntu0.3)
+   librevenge-0.0-0 (0.0.4-6ubuntu2)
+   libsgutils2-2 (1.42-2ubuntu1.18.04.2)
+   libssh-4 (0.8.0~20170825.94fa1e38-1ubuntu0.7)
+   libvncclient1 (0.9.11+dfsg-1ubuntu1.3)
+   libwinpr2-2 (2.2.0+dfsg1-0ubuntu0.18.04.1)
+   libxapian30 (1.4.5-1ubuntu0.1)
+   libxmlsec1 (1.2.25-1build1)
+   libxmlsec1-nss (1.2.25-1build1)
+   linux-headers-4.15.0-111 (4.15.0-111.112)
+   linux-headers-4.15.0-111-generic (4.15.0-111.112)
+   linux-headers-5.3.0-59 (5.3.0-59.53~18.04.1)
+   linux-headers-5.3.0-59-generic (5.3.0-59.53~18.04.1)
+   linux-image-4.15.0-111-generic (4.15.0-111.112)
+   linux-image-5.3.0-59-generic (5.3.0-59.53~18.04.1)
+   linux-modules-4.15.0-111-generic (4.15.0-111.112)
+   linux-modules-5.3.0-59-generic (5.3.0-59.53~18.04.1)
+   linux-modules-extra-4.15.0-111-generic (4.15.0-111.112)
+   linux-modules-extra-5.3.0-59-generic (5.3.0-59.53~18.04.1)
+   media-player-info (23-1)
+   syslinux (3:6.03+dfsg1-2)
+   syslinux-common (3:6.03+dfsg1-2)
+   syslinux-legacy (2:3.63+dfsg-2ubuntu9)
+   usb-creator-common (0.3.5ubuntu18.04.2)
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+   gobject-introspection (1.56.1-1)
+Suggested packages:
+   libgirepository1.0-doc (1.56.1-1)
+The following NEW packages will be installed
+   gobject-introspection (1.56.1-1)
+   libgirepository1.0-dev (1.56.1-1)
+0 to upgrade, 2 to newly install, 0 to remove and 119 not to upgrade.
+Need to get 953 kB of archives.
+After this operation, 9,657 kB of additional disk space will be used.
+Get:1 http://gb.archive.ubuntu.com/ubuntu bionic/main amd64 gobject-introspection amd64 1.56.1-1 [270 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu bionic/main amd64 libgirepository1.0-dev amd64 1.56.1-1 [683 kB]
+Fetched 953 kB in 8s (115 kB/s)
+Selecting previously unselected package gobject-introspection.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 366297 files and directories currently installed.)
+Preparing to unpack .../gobject-introspection_1.56.1-1_amd64.deb ...
+Unpacking gobject-introspection (1.56.1-1) ...
+Selecting previously unselected package libgirepository1.0-dev:amd64.
+Preparing to unpack .../libgirepository1.0-dev_1.56.1-1_amd64.deb ...
+Unpacking libgirepository1.0-dev:amd64 (1.56.1-1) ...
+Setting up gobject-introspection (1.56.1-1) ...
+Setting up libgirepository1.0-dev:amd64 (1.56.1-1) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+installing 'libgirepository1.0-dev' native package... succeeded
+--------------------
+
+have_package: checking for gobject-introspection-1.0... -------------------- yes
+
+--------------------
+
+have_func: checking for g_interface_info_find_signal() in girepository.h... -------------------- yes
+
+"gcc -o conftest -I/home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/glib2-3.4.3/ext/glib2 -I/home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/glib2-3.4.3/ext/glib2 -I/home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/glib2-3.4.3/ext/glib2 -I/home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/glib2-3.4.3/ext/glib2 -I/home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/glib2-3.4.3/ext/glib2 -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.5.1/include/ruby-2.5.0 -I. -I./.gem.20200915-11403-ptqew1  -I/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/vendor_ruby/2.5.0/x86_64-linux  -I/usr/include/gobject-introspection-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wmisleading-indentation -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wimplicit-fallthrough=0 -Wduplicated-cond -Wrestrict  -fPIC -Wall -Waggregate-return -Wcast-align -Wextra -Wformat=2 -Winit-self -Wlarger-than-65500 -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wpacked -Wp,-D_FORTIFY_SOURCE=2 -Wpointer-arith -Wundef -Wunsafe-loop-optimizations -Wwrite-strings -pthread conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.5.1/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.5.1/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic -L/usr/lib/x86_64-linux-gnu     -lglib-2.0 -lgobject-2.0 -lgirepository-1.0 -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby  -lglib-2.0 -lgobject-2.0 -lgirepository-1.0 -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <girepository.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))g_interface_info_find_signal; return !p; }
+/* end */
+
+--------------------
+

@@ -1,0 +1,15 @@
+
+<p>
+  <strong>Description:</strong>
+  <%= @forest.description %>
+</p>
+
+<% if @forest.file.attached? %>
+  <%= link_to 'View File', @forest.file %>
+  <%= link_to 'Download', @forest.file, download: '' %>
+  <%= @forest.file.blob.filename %>
+<% end %>
+
+
+<%= link_to 'Edit', edit_forest_path(@forest) %> |
+<%= link_to 'Back', forests_path %>

@@ -1,0 +1,189 @@
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/glib2-3.4.3/ext/glib2
+/usr/share/rvm/rubies/ruby-2.5.1/bin/ruby -I /usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200915-11403-4c2s8i.rb extconf.rb
+checking for --enable-debug-build option... no
+checking for -Wall option to compiler... yes
+checking for -Waggregate-return option to compiler... yes
+checking for -Wcast-align option to compiler... yes
+checking for -Wextra option to compiler... yes
+checking for -Wformat=2 option to compiler... yes
+checking for -Winit-self option to compiler... yes
+checking for -Wlarger-than-65500 option to compiler... yes
+checking for -Wmissing-declarations option to compiler... yes
+checking for -Wmissing-format-attribute option to compiler... yes
+checking for -Wmissing-include-dirs option to compiler... yes
+checking for -Wmissing-noreturn option to compiler... yes
+checking for -Wmissing-prototypes option to compiler... yes
+checking for -Wnested-externs option to compiler... yes
+checking for -Wold-style-definition option to compiler... yes
+checking for -Wpacked option to compiler... yes
+checking for -Wp,-D_FORTIFY_SOURCE=2 option to compiler... yes
+checking for -Wpointer-arith option to compiler... yes
+checking for -Wundef option to compiler... yes
+checking for -Wout-of-line-declaration option to compiler... no
+checking for -Wunsafe-loop-optimizations option to compiler... yes
+checking for -Wwrite-strings option to compiler... yes
+checking for Homebrew... no
+checking for gobject-2.0 version (>= 2.12.0)... yes
+checking for gthread-2.0... yes
+checking for unistd.h... yes
+checking for io.h... no
+checking for g_spawn_close_pid() in glib.h... yes
+checking for g_thread_init() in glib.h... yes
+checking for g_main_depth() in glib.h... yes
+checking for g_listenv() in glib.h... yes
+checking for rb_check_array_type() in ruby.h... yes
+checking for rb_check_hash_type() in ruby.h... yes
+checking for rb_exec_recursive() in ruby.h... yes
+checking for rb_errinfo() in ruby.h... yes
+checking for rb_thread_call_without_gvl() in ruby.h... yes
+checking for ruby_native_thread_p() in ruby.h... yes
+checking for rb_thread_call_with_gvl() in ruby.h... yes
+checking for rb_gc_register_mark_object() in ruby.h... yes
+checking for rb_exc_new_str() in ruby.h... yes
+checking for rb_enc_str_new_static() in ruby.h... yes
+checking for curr_thread in ruby.h,node.h... no
+checking for rb_curr_thread in ruby.h,node.h... no
+creating ruby-glib2.pc
+creating glib-enum-types.c
+creating glib-enum-types.h
+creating Makefile
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/glib2-3.4.3/ext/glib2
+make "DESTDIR=" clean
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/glib2-3.4.3/ext/glib2
+make "DESTDIR="
+compiling rbglib_timezone.c
+compiling rbglib_iochannel_win32_socket.c
+compiling rbgobj_paramspecs.c
+compiling rbglib_threads.c
+compiling rbgobj_enumflags.c
+compiling rbglib-variant-type.c
+compiling rbgutil_list.c
+compiling rbglib_utf16.c
+compiling rbgutil_callback.c
+compiling rbgobj_closure.c
+compiling rbgobj_typeplugin.c
+compiling rbglib_messages.c
+compiling rbglib_gettext.c
+compiling rbgobj_convert.c
+compiling rbglib_i18n.c
+compiling rbglib_error.c
+compiling rbglib_int64.c
+compiling rbgobj_value.c
+compiling rbglib_io_constants.c
+compiling glib-enum-types.c
+compiling rbglib_source.c
+compiling rbglib_timer.c
+compiling rbgobj_valuearray.c
+compiling rbglib_spawnerror.c
+compiling rbglib_datetime.c
+compiling rbgobj_strv.c
+In file included from rbgobject.h:27:0,
+                 from rbgprivate.h:31,
+                 from rbgobj_strv.c:22:
+rbgobj_strv.c: In function ‘strv_from_ruby’:
+rbglib.h:124:24: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define RVAL2STRV(ary) rbg_rval2strv(&(ary), NULL)
+                        ^
+rbgobj_strv.c:33:29: note: in expansion of macro ‘RVAL2STRV’
+     const gchar **strings = RVAL2STRV(from);
+                             ^~~~~~~~~
+rbgobj_strv.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+compiling rbgobj_object.c
+compiling rbglib_unicode.c
+compiling rbgobj_param.c
+compiling rbgutil.c
+compiling rbgobj_valuetypes.c
+compiling rbglib_iochannelerror.c
+compiling rbglib_ucs4.c
+compiling rbgobj_flags.c
+compiling rbglib_utf8.c
+compiling rbgobj_typeinterface.c
+compiling rbglib_pollfd.c
+compiling rbglib_iochannel.c
+compiling rbgobj_boxed.c
+compiling rbglib_regex.c
+compiling rbglib-variant.c
+compiling rbglib-bytes.c
+compiling rbgobj_typeinstance.c
+compiling rbglib_mainloop.c
+compiling rbglib_spawn.c
+compiling rbglib_shell.c
+compiling rbglibdeprecated.c
+compiling rbgutildeprecated.c
+compiling rbglib_unichar.c
+compiling rbglib_convert.c
+compiling rbgobject.c
+compiling rbgobj_type.c
+compiling rbgobj_enums.c
+compiling rbglib_win32.c
+compiling rbglib_fileutils.c
+rbglib_fileutils.c: In function ‘rbglib_m_format_size_for_display’:
+rbglib_fileutils.c:56:5: warning: ‘g_format_size_for_display’ is deprecated: Use 'g_format_size' instead [-Wdeprecated-declarations]
+     return CSTR2RVAL_FREE(g_format_size_for_display(NUM2OFFT(size)));
+     ^~~~~~
+In file included from /usr/include/glib-2.0/glib/gthread.h:34:0,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:32,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:28,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from rbgobject.h:25,
+                 from rbgprivate.h:31,
+                 from rbglib_fileutils.c:22:
+/usr/include/glib-2.0/glib/gutils.h:195:8: note: declared here
+ gchar *g_format_size_for_display (goffset size);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~
+rbglib_fileutils.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+compiling rbglib_maincontext.c
+compiling rbglib-gc.c
+compiling rbglib.c
+compiling rbglib_bookmarkfile.c
+rbglib_bookmarkfile.c: In function ‘rg_set_groups’:
+rbglib_bookmarkfile.c:388:47: warning: passing argument 3 of ‘g_bookmark_file_set_groups’ from incompatible pointer type [-Wincompatible-pointer-types]
+     g_bookmark_file_set_groups(bookmark, uri, groups, n);
+                                               ^~~~~~
+In file included from /usr/include/glib-2.0/glib.h:37:0,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:28,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from rbgobject.h:25,
+                 from rbgprivate.h:31,
+                 from rbglib_bookmarkfile.c:22:
+/usr/include/glib-2.0/glib/gbookmarkfile.h:132:16: note: expected ‘const gchar ** {aka const char **}’ but argument is of type ‘gchar ** {aka char **}’
+ void           g_bookmark_file_set_groups          (GBookmarkFile  *bookmark,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rbglib_bookmarkfile.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+compiling rbgobj_signal.c
+compiling rbgobj_typemodule.c
+compiling rbglib_shellerror.c
+compiling rbglib_keyfile.c
+compiling rbglib_utils.c
+compiling rbgobj_binding.c
+compiling rbglib_matchinfo.c
+linking shared-object glib2.so
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/glib2-3.4.3/ext/glib2
+make "DESTDIR=" install
+/usr/bin/install -m 644 ./rbglib.h ./.gem.20200915-11403-nla10s
+/usr/bin/install -m 644 ./rbglibdeprecated.h ./.gem.20200915-11403-nla10s
+/usr/bin/install -m 644 ./rbglib2conversions.h ./.gem.20200915-11403-nla10s
+/usr/bin/install -m 644 ./rbgutil.h ./.gem.20200915-11403-nla10s
+/usr/bin/install -m 644 ./rbgutil_list.h ./.gem.20200915-11403-nla10s
+/usr/bin/install -m 644 ./rbgutildeprecated.h ./.gem.20200915-11403-nla10s
+/usr/bin/install -m 644 ./rbgobject.h ./.gem.20200915-11403-nla10s
+/usr/bin/install -m 644 ./rbgcompat.h ./.gem.20200915-11403-nla10s
+/usr/bin/install -m 644 glib-enum-types.h ./.gem.20200915-11403-nla10s
+/usr/bin/install -m 0755 glib2.so ./.gem.20200915-11403-nla10s
+if test -n ""; then			\
+  /bin/mkdir -p ;				\
+  /usr/bin/install -m 644 ruby-glib2.pc ;	\
+fi

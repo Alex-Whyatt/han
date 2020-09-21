@@ -1,0 +1,46 @@
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/cairo-1.16.6/ext/cairo
+/usr/share/rvm/rubies/ruby-2.5.1/bin/ruby -I /usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200915-11403-dx5kd0.rb extconf.rb
+checking for GCC... yes
+checking for Homebrew... no
+checking for cairo version (>= 1.2.0)... yes
+checking for cairo-ft... yes
+checking for macOS... no
+checking for HAVE_RUBY_ST_H in ruby.h... yes
+checking for HAVE_RUBY_IO_H in ruby.h... yes
+checking for rb_errinfo() in ruby.h... yes
+checking for rb_gc_adjust_memory_usage() in ruby.h... yes
+checking for enum ruby_value_type in ruby.h... yes
+creating Makefile
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/cairo-1.16.6/ext/cairo
+make "DESTDIR=" clean
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/cairo-1.16.6/ext/cairo
+make "DESTDIR="
+compiling rb_cairo.c
+compiling rb_cairo_constants.c
+compiling rb_cairo_context.c
+compiling rb_cairo_device.c
+compiling rb_cairo_exception.c
+compiling rb_cairo_font_extents.c
+compiling rb_cairo_font_face.c
+compiling rb_cairo_font_options.c
+compiling rb_cairo_glyph.c
+compiling rb_cairo_io.c
+compiling rb_cairo_matrix.c
+compiling rb_cairo_path.c
+compiling rb_cairo_pattern.c
+compiling rb_cairo_private.c
+compiling rb_cairo_quartz_surface.c
+compiling rb_cairo_rectangle.c
+compiling rb_cairo_region.c
+compiling rb_cairo_scaled_font.c
+compiling rb_cairo_surface.c
+compiling rb_cairo_text_cluster.c
+compiling rb_cairo_text_extents.c
+linking shared-object cairo.so
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/cairo-1.16.6/ext/cairo
+make "DESTDIR=" install
+/usr/bin/install -m 644 ./rb_cairo.h ./.gem.20200915-11403-1i13au9
+/usr/bin/install -m 0755 cairo.so ./.gem.20200915-11403-1i13au9

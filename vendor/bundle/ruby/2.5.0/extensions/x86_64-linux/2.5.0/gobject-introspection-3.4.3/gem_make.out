@@ -1,0 +1,125 @@
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/gobject-introspection-3.4.3/ext/gobject-introspection
+/usr/share/rvm/rubies/ruby-2.5.1/bin/ruby -I /usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200915-11403-1un6va6.rb extconf.rb
+checking for --enable-debug-build option... no
+checking for -Wall option to compiler... yes
+checking for -Waggregate-return option to compiler... yes
+checking for -Wcast-align option to compiler... yes
+checking for -Wextra option to compiler... yes
+checking for -Wformat=2 option to compiler... yes
+checking for -Winit-self option to compiler... yes
+checking for -Wlarger-than-65500 option to compiler... yes
+checking for -Wmissing-declarations option to compiler... yes
+checking for -Wmissing-format-attribute option to compiler... yes
+checking for -Wmissing-include-dirs option to compiler... yes
+checking for -Wmissing-noreturn option to compiler... yes
+checking for -Wmissing-prototypes option to compiler... yes
+checking for -Wnested-externs option to compiler... yes
+checking for -Wold-style-definition option to compiler... yes
+checking for -Wpacked option to compiler... yes
+checking for -Wp,-D_FORTIFY_SOURCE=2 option to compiler... yes
+checking for -Wpointer-arith option to compiler... yes
+checking for -Wundef option to compiler... yes
+checking for -Wout-of-line-declaration option to compiler... no
+checking for -Wunsafe-loop-optimizations option to compiler... yes
+checking for -Wwrite-strings option to compiler... yes
+checking for Homebrew... no
+checking for gobject-introspection-1.0... no
+installing 'libgirepository1.0-dev' native package... succeeded
+checking for gobject-introspection-1.0... yes
+creating rbgiversion.h
+checking for g_interface_info_find_signal() in girepository.h... yes
+creating gobject-introspection-enum-types.c
+creating gobject-introspection-enum-types.h
+creating ruby-gobject-introspection.pc
+creating Makefile
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/gobject-introspection-3.4.3/ext/gobject-introspection
+make "DESTDIR=" clean
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/gobject-introspection-3.4.3/ext/gobject-introspection
+make "DESTDIR="
+compiling rb-gi-signal-info.c
+compiling rb-gi-arguments-in.c
+rb-gi-arguments-in.c: In function ‘rb_gi_arguments_in_init_arg_ruby_array_set_length’:
+rb-gi-arguments-in.c:334:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     RBGIArgMetadata *length_metadata = metadata->array_length_metadata;
+     ^~~~~~~~~~~~~~~
+rb-gi-arguments-in.c: In function ‘rb_gi_arguments_in_init_arg_ruby_array_c_interface_struct’:
+rb-gi-arguments-in.c:740:9: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+         gpointer *raw_array = ALLOC_N(gpointer, n_elements);
+         ^~~~~~~~
+rb-gi-arguments-in.c: In function ‘rb_gi_arguments_in_init_arg_ruby_array_c’:
+rb-gi-arguments-in.c:1010:41: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+             metadata->in_arg->v_pointer = RVAL2CSTR(rb_arg);
+                                         ^
+rb-gi-arguments-in.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+compiling rb-gi-direction.c
+compiling rb-gi-value-info.c
+compiling rb-gi-callback.c
+compiling rb-gi-vfunc-info.c
+compiling rb-gi-repository.c
+compiling rb-gi-arg-info.c
+rb-gi-arg-info.c: In function ‘rb_gi_arg_info_is_output_buffer’:
+rb-gi-arg-info.c:37:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     GITypeInfo type_info;
+     ^~~~~~~~~~
+rb-gi-arg-info.c:43:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     GITypeInfo *element_type_info = g_type_info_get_param_type(&type_info, 0);
+     ^~~~~~~~~~
+rb-gi-arg-info.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+compiling rb-gi-union-info.c
+compiling rb-gi-type-info.c
+compiling rb-gi-loader.c
+compiling rb-gi-struct-info.c
+compiling rb-gi-array-type.c
+compiling rb-gi-argument.c
+compiling rb-gi-unresolved-info.c
+compiling rb-gi-enum-info.c
+compiling rb-gi-arguments-out.c
+rb-gi-arguments-out.c: In function ‘rb_gi_arguments_out_init_arg_array_c’:
+rb-gi-arguments-out.c:288:13: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+             RBGIArgMetadata *length_metadata = metadata->array_length_metadata;
+             ^~~~~~~~~~~~~~~
+rb-gi-arguments-out.c: In function ‘rb_gi_arguments_out_to_ruby_arg’:
+rb-gi-arguments-out.c:799:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     GIArgument normalized_argument;
+     ^~~~~~~~~~
+rb-gi-arguments-out.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+compiling rb-gi-function-info.c
+compiling rb-gi-callback-info.c
+compiling gobject-introspection-enum-types.c
+compiling rb-gi-method-info.c
+compiling rb-gobject-introspection.c
+compiling rb-gi-transfer.c
+compiling rb-gi-constructor-info.c
+compiling rb-gi-flags-info.c
+compiling rb-gi-constant-info.c
+compiling rb-gi-property-info.c
+compiling rb-gi-boxed-info.c
+compiling rb-gi-object-info.c
+compiling rb-gi-arguments.c
+compiling rb-gi-base-info.c
+compiling rb-gi-registered-type-info.c
+compiling rb-gi-type-tag.c
+compiling rb-gi-interface-info.c
+compiling rb-gi-callable-info.c
+compiling rb-gi-field-info.c
+linking shared-object gobject_introspection.so
+
+current directory: /home/alex/RailsApps/hannah2/vendor/bundle/ruby/2.5.0/gems/gobject-introspection-3.4.3/ext/gobject-introspection
+make "DESTDIR=" install
+/usr/bin/install -m 644 ./rb-gobject-introspection.h ./.gem.20200915-11403-ptqew1
+/usr/bin/install -m 0755 gobject_introspection.so ./.gem.20200915-11403-ptqew1
+if test -n ""; then				\
+  /bin/mkdir -p ;					\
+  /usr/bin/install -m 644 ruby-gobject-introspection.pc ;\
+fi
