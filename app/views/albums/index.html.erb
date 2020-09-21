@@ -4,19 +4,14 @@
     <% @albums.each do |album| %>    
           <div class="card" style="border-color: white;width:auto;float:left;padding-left: 25px;padding-top:50px">
             <%= link_to image_tag(album.thumbnail_f), images_url(:id => album.id) %>
-            <a class="nav-link" style="color: black;font-family:icofonts;font-size: 12px;text-align: center;"href="<%= images_url(:id => album.id) %>"><%= album.title %> | <span class="badge badge-dark"><%= album.images.count %></span></a>
+            <a class="nav-link" style="color: black;font-family:icofonts;font-size: 12px;text-align: center;"href="<%= images_url(:id => album.id) %>"><%= album.title %> | <span class="badge badge-dark"><%= album.images.count %></span><% if current_user && current_user.admin? %>
+	            <p><%= button_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger btn-sm" %><%= link_to 'Change Thumbnail', edit_album_path(album), class:"btn btn-outline-primary btn-sm" %>
+	            <% end %></a>
           </div>
     <% end %>
     <div class="container" style="float:left;padding-left: 50px;padding-top: 50px;padding-bottom: 100px">
-    <%= link_to 'New Album', new_album_path, class: 'btn btn-dark btn-sml' %>
-
-  <div class="container" style="padding-top:100px;">
-    <% @images.each do |img| %>
-        <div class="card" style="border-color: white;width:auto;float:left;padding-right:25px">
-        <%= image_tag(img.drawing_c) %>
-        <%= link_to img.title, img, class: "btn btn-sml"%>
-        </div>
+    <% if current_user && current_user.admin? %>
+    	<%= link_to 'New Album', new_album_path, class: 'btn btn-dark btn-sml' %>
     <% end %>
-  </div>
 </div>
 

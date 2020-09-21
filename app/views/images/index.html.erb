@@ -9,14 +9,18 @@
         <% if img.drawing.attached? %>
           <%= image_tag(img.drawing_f) %>
         <% end %>
-        <%= link_to img.title, img, class: "btn btn-sml"%>
+        <%= link_to img.title, img, class: "btn btn-sml"%><% if current_user && current_user.admin? %>
+              <p><%= button_to 'Destroy', img, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-danger btn-sm" %>
+              <% end %></a>
         </div>
        </div>
     <% end %>
   </div>
 
   <div class="container" style="padding-top:75px;padding-left: 160px;float:left">
-    <%= link_to "Upload new drawing", new_image_path(:album_id => @album.id), class: "btn btn-dark" %>
+    <% if current_user && current_user.admin? %>
+      <%= link_to "Upload new drawing", new_image_path(:album_id => @album.id), class: "btn btn-dark" %>
+    <% end %>
   </div>
 
 </div>

@@ -25,6 +25,7 @@ gem 'simple_form'
 gem 'mini_magick'
 gem 'jquery-rails'
 gem 'devise'
+gem 'poppler'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

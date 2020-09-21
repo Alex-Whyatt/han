@@ -1,10 +1,5 @@
-<div class="navbar" style="width:10%;height:100%;float:left;"> 
+<div class="navbar" style="width:10%;float:left;"> 
   <h2 style="color:grey;font-family:icofonts;"> Website_Name </h2>
-
-  <%= link_to "Sign up", new_user_registration_path %>
-  <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-
-
 
   <ul class="nav flex-column" style="padding-top: 200px">
 
@@ -15,7 +10,13 @@
       <a class="nav-link" style="color: black;font-family:GT Walsheim;"href="<%= albums_path %>">images</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" style="color: black;font-family:GT Walsheim;"href="">forests</a>
+      <a class="nav-link" style="color: black;font-family:GT Walsheim;"href="<%= forests_path %>">forests</a>
     </li>
   </ul>
 </div>
+
+  <div class="container" style="width:90%;text-align:right">
+     <% if user_signed_in? %>
+      <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+    <% end %>
+  </div>

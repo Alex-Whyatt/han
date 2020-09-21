@@ -12,8 +12,11 @@
 
   <body>
     <%= render 'layouts/sidebar' %>
+    <br>
+    <div class="container" style="padding-left: 250px">
     <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
+    </div>
     <%= yield %>
     <%= yield :after_js %>
   </body>

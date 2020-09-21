@@ -1,3 +1,4 @@
+<%= javascript_pack_tag 'application' %>
 <div class="container" style="padding-top: 200px;height:100%;padding-left: 25px;width:50%">
   <div class="card" style="float:left;background-color:#f1f8ff">
     <div class="container" style="padding-left: 25px;padding-top: 25px">
@@ -19,12 +20,10 @@
           <%= form.text_field :title, class: "form-control" %>
         </div>
         <br>
-
-        <div class="field" class="height:175px">
-          <%= form.label :body, "Describe the masterpiece:" %>
-          <%= form.rich_text_area :body %>
+        <div class="field">
+          <%= form.label :body %>
+          <%= form.text_field :body, class:"form-control" %>
         </div>
-
         <div class="field">
           <%= form.label :drawing, "Select your image" %>
           <%= form.file_field :drawing, multiple: false, direct_upload: true %>
@@ -35,7 +34,6 @@
           <%= form.collection_radio_buttons(:album_id, @album, :id, :title) do |b| b.label(:"data-value" => b.value, class: "form-control") { b.radio_button + b.text }
           end
           %>
-        
         <div class="actions" style="padding-left: 550px">
           <br>
           <%= form.submit "Upload" %>

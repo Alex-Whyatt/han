@@ -16,6 +16,10 @@ require("packs/lightbox.js")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+//= require turbolinks
+//= require rails-ujs
+//= require popper
+//= require bootstrap-sprockets
 //= require jquery3
 //= require jquery_ujs
 //= require_tree

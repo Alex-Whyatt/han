@@ -1,7 +1,7 @@
 class Image < ApplicationRecord
   belongs_to :album
-  has_one_attached :drawing
   has_rich_text :body
+  has_one_attached :drawing
 
 	def drawing_f
   		return self.drawing.variant(resize: "200x200!").processed
