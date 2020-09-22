@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_15_110818) do
+ActiveRecord::Schema.define(version: 2020_09_21_143237) do
 
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
@@ -70,6 +70,13 @@ ActiveRecord::Schema.define(version: 2020_09_15_110818) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["album_id"], name: "index_images_on_album_id"
+  end
+
+  create_table "infos", force: :cascade do |t|
+    t.string "title"
+    t.string "about_me"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|

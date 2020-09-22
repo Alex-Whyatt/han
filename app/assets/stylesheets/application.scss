@@ -1,5 +1,7 @@
 //= require actiontext
 // Masquerade alert shouldn't have a bottom margin
+@import "./actiontext.scss"
+
 body > .alert {
   margin-bottom: 0;
 }

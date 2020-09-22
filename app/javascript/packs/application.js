@@ -8,6 +8,8 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("packs/lightbox.js")
+require("trix")
+require("@rails/actiontext")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -36,6 +38,5 @@ global.$ = jQuery;
 import JQuery from 'jquery';
 window.$ = window.JQuery = JQuery;
 
-require("trix")
-require("@rails/actiontext")
+
 
