@@ -1,6 +1,6 @@
 class ForestsController < ApplicationController
   before_action :set_forest, only: [:show, :edit, :update, :destroy]
-
+  before_action :is_admin?, only: [:edit, :update, :destroy]
   # GET /forests
   # GET /forests.json
   def index

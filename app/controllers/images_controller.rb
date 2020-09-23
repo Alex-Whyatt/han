@@ -1,6 +1,7 @@
 class ImagesController < ApplicationController
   before_action :set_image, only: [:show, :edit, :update, :destroy]
   before_action :find_album, only: [:update, :destroy]
+  before_action :is_admin?, only: [:edit, :update, :destroy]
   # GET /images
   # GET /images.json
   def index
@@ -10,8 +11,7 @@ class ImagesController < ApplicationController
 
   # GET /images/1
   # GET /images/1.json
-  def show
-    @album = Album.find(params[:album_id]) if params[:album_id]
+  def show 
     @image = Image.find(params[:id])
     @next_image = @image.next_1
   end
