@@ -1,7 +1,4 @@
 class ApplicationController < ActionController::Base
-
-
-
 	def is_admin?
       # check if user is a admin
       # if not admin then redirect to where ever you want 
