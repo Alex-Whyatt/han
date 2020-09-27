@@ -26,7 +26,7 @@ gem 'devise'
 gem 'poppler'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-gem 'gobject-introspection', '3.4.3'
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -49,6 +49,9 @@ end
 group :production do
   gem 'pg', '0.18.1'
   gem 'rails_12factor'
+  gem 'rsvg2', '~> 3.4.3'
+  gem 'gobject-introspection', '3.4.3'
+  gem 'gio2', '~> 3.4.3'
 end
 
 group :test do
