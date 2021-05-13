@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.6.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
@@ -23,7 +23,6 @@ gem 'simple_form'
 gem 'mini_magick'
 gem 'jquery-rails'
 gem 'devise'
-gem 'poppler'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -50,7 +49,6 @@ group :production do
   gem 'pg', '0.18.1'
   gem 'rails_12factor'
   gem 'rsvg2', '~> 3.4.3'
-  gem 'gobject-introspection', '3.4.3'
   gem 'gio2', '~> 3.4.3'
 end
 
